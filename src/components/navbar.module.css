@@ -1,0 +1,94 @@
+.name {
+  color: #e0115f;
+  font-family: sans-serif;
+}
+.active {
+  border-bottom: 2px solid #e0115f;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.brand {
+  margin-top: 12px;
+  color: #f5f5f5;
+  text-transform: capitalize;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 3.5px solid #e0115f;
+}
+/* .navbarcollapse {
+  display: none;
+} */
+.toggle {
+  background-color: #e0115f;
+}
+.togglebut {
+  background-color: #e0115f;
+}
+.togglebut:hover {
+  background-color: #e0115f;
+}
+.navbarcontainer {
+  background-color: rgba(0, 0, 0, 0);
+}
+.navitems_ul {
+  display: flex;
+  gap: 25px;
+  color: #f5f5f5;
+}
+.navitem_li {
+  color: #f5f5f5;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
+.navitem_link {
+  text-decoration: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.navitem_link:hover {
+  border-bottom: 4px solid #e0115f;
+}
+.hireme {
+  background-color: #e0115f;
+  width: 100px;
+  border: 2px solid #e0115f;
+  border-radius: 10px;
+  color: white;
+}
+.hireme:hover {
+  background-color: transparent;
+}
+/*media queries*/
+<<<<<<< HEAD
+@media only screen and (max-width: 1000px) {
+=======
+@media only screen and (max-width: 850px) {
+>>>>>>> 206988a778aadccc9bd4b3f42de2130a43e6d744
+  .brand {
+    font-size: medium;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .navitems_ul {
+    gap: 10px;
+  }
+  .navitem_li {
+    font-size: medium;
+  }
+}

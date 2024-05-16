@@ -1,0 +1,138 @@
+.skillscontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.skillsheading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.listOfSingleSkills {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.singleskillContainer {
+  padding: 10px;
+  /* background-color: #e0115f; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 0px;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.singleskillContainer:hover {
+  background-color: gray;
+}
+.skilllogo {
+  margin-bottom: 20px;
+}
+.skillname {
+  margin-bottom: 0px;
+}
+/* front end skill */
+
+.frontendskills,
+.programmingskills,
+.dbskills,
+.frameworkskills {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message,
+.programmessage,
+.dbmessage,
+.fwmessage {
+  margin-top: 35px;
+  color: rgb(166, 164, 164);
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+<<<<<<< HEAD
+@media only screen and (max-width: 1000px) {
+=======
+@media only screen and (max-width: 850px) {
+>>>>>>> 206988a778aadccc9bd4b3f42de2130a43e6d744
+  .skillscontainer {
+    flex-direction: column;
+  }
+
+  .skillsheading {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .listOfSingleSkills {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .singleskillContainer {
+    padding: 10px;
+    /* background-color: #e0115f; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: wheat;
+  }
+  .singleskillContainer:hover {
+    background-color: rgb(131, 129, 129);
+  }
+  .skilllogo {
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+  }
+  .skillname {
+    margin-bottom: 0px;
+  }
+  /* front end skill */
+
+  .frontendskills,
+  .programmingskills,
+  .dbskills,
+  .frameworkskills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .message,
+  .programmessage,
+  .dbmessage,
+  .fwmessage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 10px;
+    color: white;
+  }
+}

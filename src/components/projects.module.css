@@ -1,0 +1,153 @@
+.projectscontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+  color: red;
+  z-index: 3;
+}
+.projectheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.singleprojects {
+  width: 350px;
+  height: fit-content;
+  background-color: transparent;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.threeprojects,
+.sixprojects {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.image {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.link {
+  text-decoration: none;
+}
+.titleanddesc {
+  padding: 10px;
+}
+.title,
+.languages {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+.desc,
+.langskills {
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  font-family: sans-serif;
+  text-align: justify;
+  color: black;
+  text-transform: lowercase;
+}
+.source {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.viewcode,
+.livedemo,
+.videodemo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 100px;
+  height: fit-content;
+}
+.viewcode:hover,
+.videodemo:hover,
+.livedemo:hover {
+  background-color: #e0115f;
+}
+.codeview,
+.liveview,
+.videoview {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+.codeview:hover,
+.liveview:hover,
+.videoview:hover {
+  color: white;
+}
+
+.iconsofview {
+  /* color: black; */
+  font-size: 1.5rem;
+}
+.iconsofview:hover {
+  color: white;
+}
+<<<<<<< HEAD
+@media only screen and (max-width: 1000px) {
+=======
+@media only screen and (max-width: 850px) {
+>>>>>>> 206988a778aadccc9bd4b3f42de2130a43e6d744
+  .threeprojects,
+  .sixprojects {
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .singleprojects {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .desc,
+  .langskills {
+    font-size: 10px;
+  }
+  .source {
+    flex-direction: column;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .viewcode,
+  .livedemo,
+  .videodemo {
+    margin-bottom: 20px;
+
+    width: 100%;
+    height: fit-content;
+    background-color: #e0115f;
+  }
+  .viewcode:hover,
+  .videodemo:hover,
+  .livedemo:hover {
+    background-color: transparent;
+  }
+  .codeview,
+  .liveview,
+  .videoview {
+    font-weight: bolder;
+  }
+}
