@@ -1,5 +1,5 @@
 import styles from "./home.module.css";
-import photo from "../images/photo.png";
+import photo from "../images/photo.jpg";
 import resume from "../images/resume.pdf";
 import { Link } from "react-router-dom";
 import { GrLinkedinOption } from "react-icons/gr";
