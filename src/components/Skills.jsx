@@ -1,43 +1,56 @@
-// skills.js
-// import React from "react";
-// import { FaJava } from "react-icons/fa";
-// import { DiPython } from "react-icons/di";
-import allskills from "./Allskills";
-import styles from "./skills.module.css";
-import Frontendskill from "./Frontendskill";
-import langskills from "./Languageskills";
-import dbskills from "./Databaseskills";
-import Frameworkskill from "./Frameworkskill";
+"use client";
+
+import React from "react";
+import { skillsData } from "../data/skillsData";
+
 export default function Skills() {
+  const categoryTitles = {
+    programmingFrameworks: "Programming & Frameworks",
+    frontend: "Front-End Development",
+    cloudDevops: "Cloud & DevOps",
+    apisTools: "APIs & Tools",
+    monitoringLogging: "Monitoring & Logging",
+    utilitiesIdes: "Utilities & IDEs"
+  };
+
   return (
-    <div className={`container ${styles.skillscontainer}`} id="skillsec">
-      <div className={styles.skillsheading}>Skills</div>
-      <div>
-        <div className={`${styles.frontendskills}`}>
-          <div className={styles.message}>FrontEnd</div>
-          <div className={styles.singleskill}>
-            <Frontendskill allskills={allskills}></Frontendskill>
-          </div>
+    <section className="skills-section" id="skillsec">
+      <div className="layout-container">
+        <div className="section-header">
+          <h2 className="section-title"><span className="gradient-text">Technical Skills</span></h2>
+          <p className="section-subtitle">My core technical competencies compiled from my experience and academic record.</p>
         </div>
-        <div className={styles.programmingskills}>
-          <div className={styles.programmessage}>Languages</div>
-          <div className={styles.singleskill}>
-            <Frontendskill allskills={langskills}></Frontendskill>
-          </div>
-        </div>
-        <div className={styles.dbskills}>
-          <div className={styles.dbmessage}>Databases</div>
-          <div className={styles.singleskill}>
-            <Frontendskill allskills={dbskills}></Frontendskill>
-          </div>
-        </div>
-        <div className={styles.frameworkskills}>
-          <div className={styles.fwmessage}>Frameworks & Tools</div>
-          <div className={styles.singleskill}>
-            <Frontendskill allskills={Frameworkskill}></Frontendskill>
-          </div>
+
+        <div className="skills-grid">
+          {Object.keys(skillsData).map((categoryKey) => {
+            const skillsList = skillsData[categoryKey];
+            const title = categoryTitles[categoryKey];
+
+            return (
+              <div className="skills-category-card glass-panel" key={categoryKey}>
+                <h3 className="category-title">{title}</h3>
+                <div className="skills-list">
+                  {skillsList.map((skill, index) => {
+                    const IconComponent = skill.icon;
+                    return (
+                      <div 
+                        className="skill-pill" 
+                        key={index}
+                        style={{ "--hover-color": skill.color }}
+                      >
+                        <span className="skill-icon-wrapper" style={{ color: skill.color }}>
+                          <IconComponent className="skill-icon" />
+                        </span>
+                        <span className="skill-name">{skill.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
